@@ -1,7 +1,21 @@
 # Calssados
 IT MEANT TO BE CALÇADOS NOT CALSSADOS! anyway...
  
-Full Changelog and notes...
+Full Changelog and notes... Yeah... i intro it with conclusions.
+Update 05/07/2018
+A0.4
+Concluding: Items are to my likings of balance. The items now appear on Raiders, Traders, Visitors also should appear on drop pods survivors. The militaristic ones will protect very well your feet, since they have around 20hp foot so considering 75% of sharp damage reduction a income of 40dmg will only do 10 dmg only damaging the feet. Toes however may be shotted off at this damage. 
+
+For future updates A0.5:
+- Considering station for creation of footwears and handwears. (I may will pool this question)
+- C# program it "Feet Shackles" somehow...
+- Add new features (not all of those) (spacer handwear, spacer footwear, end-game handwears, footwear)
+
+Removed Features:
+- Feet Shackles (I don't feel i should release this feature now, need to work the Csharp on them.)
+
+YOUR FEEDBACK:
+I first applied my gameplay style, but i want to know how you guys are doing. So feedback if you think should have changes
 
 Update 03/07/2018 
 A0.3
