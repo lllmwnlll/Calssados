@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!-- bases -->
+ <ThingDef Name="MWN_HandwearMakeableBase" ParentName="ApparelMakeableBase" Abstract="True">
+    <thingCategories>
+      <li>Handwear</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Hands</li>
+      </bodyPartGroups>
+    </apparel>
+ </ThingDef>
+ <ThingDef Name="MWN_HandArmorMakeableBase" ParentName="ArmorMakeableBase" Abstract="True">
+    <thingCategories>
+      <li>Handwear</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Hands</li>
+      </bodyPartGroups>
+    </apparel>
+</ThingDef>
+ <!-- ========== Generic Gloves ========== -->
+<ThingDef ParentName="MWN_HandwearMakeableBase">
+    <defName>MWN_Apparel_genericgloves</defName>
+    <label>gloves</label>
+    <description>Maded from leather or fabric. It's a common glove which give protection against cold and to possible injuries. Fragile but cheap, will deteriorate quickly also slows down work a bit.</description>
+	<techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Handwear/GenericGloves_OnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>20</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+	<tradeability>Sellable</tradeability>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToMake>3000</WorkToMake>
+      <Mass>0.15</Mass>
+      <ArmorRating_Blunt>0.015</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.015</ArmorRating_Sharp>
+      <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+	  <EquipDelay>0.6</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+		<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+	</equippedStatOffsets>
+    <apparel>
+      <tags>
+        <li>IndustrialBasic</li>
+		<li>MedievalMilitary</li>
+		<li>Neolithic</li>
+      </tags>
+	  <layers>
+        <li>Middle</li>
+		<li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+<!-- ========== Fingerless Gloves ========== -->
+<ThingDef ParentName="MWN_HandwearMakeableBase">
+    <defName>MWN_Apparel_fingerlessgloves</defName>
+    <label>fingerless gloves</label>
+    <description>These gloves can be worn under other gloves, improving mainly protection and a bit better insulation against cold. Cheap but deteriorate very quickly.</description>
+	<techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Handwear/FingerlessGloves_OnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<costStuffCount>15</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+	<tradeability>Sellable</tradeability>
+    <statBases>
+      <MaxHitPoints>25</MaxHitPoints>
+	  <WorkToMake>2400</WorkToMake>
+	  <Mass>0.3</Mass>
+	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+	  <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+	  <EquipDelay>1.0</EquipDelay>
+    </statBases>
+    <apparel>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+	  <layers>
+        <li>OnSkin</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+	<colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+<!-- ========== Padded Leather Gloves ========== -->
+<ThingDef ParentName="MWN_HandwearMakeableBase">
+    <defName>MWN_Apparel_paddedgloves</defName>
+    <label>padded gloves</label>
+    <description>Protects the entire posterior part of the hand with hard plates, meanwhile in the phalanges of the fingers also there are hard points, while the anterior part of the hand and the joints receive a only layer of leather for protection being its weak point.</description>
+    <graphicData>
+      <texPath>Handwear/PaddedGloves_OnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<techLevel>Medieval</techLevel>
+    <costStuffCount>40</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1.10</Mass>
+	  <StuffEffectMultiplierArmor>0.10</StuffEffectMultiplierArmor>
+      <ArmorRating_Blunt>0.085</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+	  <EquipDelay>1.0</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>-0.50</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+	  <layers>
+        <li>Middle</li>
+		<li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+<!-- ========== Metal Chain Gloves ========== -->  
+<ThingDef ParentName="MWN_HandArmorMakeableBase">
+    <defName>MWN_Apparel_chaingloves</defName>
+    <label>chain gloves</label>
+    <description>Chain gloves, design to be used under another glove, offer a decent protection against sharp threats somehow... Also protects well against bullets. Costly, hard to make, not sturdy, not fitted for working, combat only</description>
+    <graphicData>
+      <texPath>Handwear/ChainGloves_OnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<techLevel>Medieval</techLevel>
+    <costStuffCount>65</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>0.80</Mass>
+	  <StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+      <ArmorRating_Blunt>0.065</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+	  <EquipDelay>3.0</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <tags>
+        <li>MedievalMilitary</li>
+      </tags>
+	  <layers>
+        <li>OnSkin</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+<!-- ========== Metal Gauntlets ========== -->  
+<ThingDef ParentName="MWN_HandArmorMakeableBase">
+    <defName>MWN_Apparel_gauntlets</defName>
+    <label>gauntlets</label>
+    <description>Gauntlets maded from metals. Bulky, protects all the hand with a massive layer of metal, meanwhile decent enough to protect from charge bullets, it's heavy and don't have use on working, combat only.</description>
+    <graphicData>
+      <texPath>Handwear/Gauntlets_OnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<techLevel>Medieval</techLevel>
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>3.80</Mass>
+	  <StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+	  <EquipDelay>5.0</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>-0.75</WorkSpeedGlobal>
+	  <ShootingAccuracy>-0.075</ShootingAccuracy>
+    </equippedStatOffsets>
+    <apparel>
+      <tags>
+        <li>MedievalMilitary</li>
+      </tags>
+	  <layers>
+        <li>Middle</li>
+		<li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+<!-- ========== Social Gloves ========== -->
+<ThingDef ParentName="MWN_HandwearMakeableBase">
+    <defName>MWN_Apparel_socialgloves</defName>
+    <label>social gloves</label>
+    <description>Can be maded from leather or fabric. These gloves have been maded to be beautifull and make a impression to anyone. They deteriorate very fast</description>
+	<techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Handwear/SocialGloves_OnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+	<tradeability>Sellable</tradeability>
+    <statBases>
+      <MaxHitPoints>25</MaxHitPoints>
+	  <WorkToMake>3500</WorkToMake>
+	  <Mass>0.3</Mass>
+      <StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+	  <EquipDelay>1.0</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+		<RecruitPrisonerChance>0.075</RecruitPrisonerChance>
+		<SocialImpact>0.05</SocialImpact>
+		<TradePriceImprovement>0.075</TradePriceImprovement>
+    </equippedStatOffsets>
+    <apparel>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+	  <layers>
+        <li>OnSkin</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+	<colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  </Defs>
